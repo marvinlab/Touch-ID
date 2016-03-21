@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7270AB411C9FE1BB00F04FD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7270AB401C9FE1BB00F04FD3 /* main.m */; };
+		7270AB441C9FE1BB00F04FD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7270AB431C9FE1BB00F04FD3 /* AppDelegate.m */; };
+		7270AB471C9FE1BB00F04FD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7270AB461C9FE1BB00F04FD3 /* ViewController.m */; };
+		7270AB4A1C9FE1BB00F04FD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7270AB481C9FE1BB00F04FD3 /* Main.storyboard */; };
+		7270AB4C1C9FE1BB00F04FD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7270AB4B1C9FE1BB00F04FD3 /* Assets.xcassets */; };
+		7270AB4F1C9FE1BB00F04FD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7270AB4D1C9FE1BB00F04FD3 /* LaunchScreen.storyboard */; };
+		7270AB5A1C9FE1BB00F04FD3 /* TouchIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7270AB591C9FE1BB00F04FD3 /* TouchIDTests.m */; };
+		7270AB651C9FE1BB00F04FD3 /* TouchIDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7270AB641C9FE1BB00F04FD3 /* TouchIDUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7270AB561C9FE1BB00F04FD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7270AB341C9FE1BB00F04FD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7270AB3B1C9FE1BB00F04FD3;
+			remoteInfo = TouchID;
+		};
+		7270AB611C9FE1BB00F04FD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7270AB341C9FE1BB00F04FD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7270AB3B1C9FE1BB00F04FD3;
+			remoteInfo = TouchID;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7270AB3C1C9FE1BB00F04FD3 /* TouchID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchID.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7270AB401C9FE1BB00F04FD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7270AB421C9FE1BB00F04FD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7270AB431C9FE1BB00F04FD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7270AB451C9FE1BB00F04FD3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7270AB461C9FE1BB00F04FD3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7270AB491C9FE1BB00F04FD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7270AB4B1C9FE1BB00F04FD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7270AB4E1C9FE1BB00F04FD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7270AB501C9FE1BB00F04FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7270AB551C9FE1BB00F04FD3 /* TouchIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7270AB591C9FE1BB00F04FD3 /* TouchIDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchIDTests.m; sourceTree = "<group>"; };
+		7270AB5B1C9FE1BB00F04FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7270AB601C9FE1BB00F04FD3 /* TouchIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7270AB641C9FE1BB00F04FD3 /* TouchIDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchIDUITests.m; sourceTree = "<group>"; };
+		7270AB661C9FE1BB00F04FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7270AB391C9FE1BB00F04FD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7270AB521C9FE1BB00F04FD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7270AB5D1C9FE1BB00F04FD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7270AB331C9FE1BB00F04FD3 = {
+			isa = PBXGroup;
+			children = (
+				7270AB3E1C9FE1BB00F04FD3 /* TouchID */,
+				7270AB581C9FE1BB00F04FD3 /* TouchIDTests */,
+				7270AB631C9FE1BB00F04FD3 /* TouchIDUITests */,
+				7270AB3D1C9FE1BB00F04FD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7270AB3D1C9FE1BB00F04FD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7270AB3C1C9FE1BB00F04FD3 /* TouchID.app */,
+				7270AB551C9FE1BB00F04FD3 /* TouchIDTests.xctest */,
+				7270AB601C9FE1BB00F04FD3 /* TouchIDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7270AB3E1C9FE1BB00F04FD3 /* TouchID */ = {
+			isa = PBXGroup;
+			children = (
+				7270AB421C9FE1BB00F04FD3 /* AppDelegate.h */,
+				7270AB431C9FE1BB00F04FD3 /* AppDelegate.m */,
+				7270AB451C9FE1BB00F04FD3 /* ViewController.h */,
+				7270AB461C9FE1BB00F04FD3 /* ViewController.m */,
+				7270AB481C9FE1BB00F04FD3 /* Main.storyboard */,
+				7270AB4B1C9FE1BB00F04FD3 /* Assets.xcassets */,
+				7270AB4D1C9FE1BB00F04FD3 /* LaunchScreen.storyboard */,
+				7270AB501C9FE1BB00F04FD3 /* Info.plist */,
+				7270AB3F1C9FE1BB00F04FD3 /* Supporting Files */,
+			);
+			path = TouchID;
+			sourceTree = "<group>";
+		};
+		7270AB3F1C9FE1BB00F04FD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7270AB401C9FE1BB00F04FD3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7270AB581C9FE1BB00F04FD3 /* TouchIDTests */ = {
+			isa = PBXGroup;
+			children = (
+				7270AB591C9FE1BB00F04FD3 /* TouchIDTests.m */,
+				7270AB5B1C9FE1BB00F04FD3 /* Info.plist */,
+			);
+			path = TouchIDTests;
+			sourceTree = "<group>";
+		};
+		7270AB631C9FE1BB00F04FD3 /* TouchIDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7270AB641C9FE1BB00F04FD3 /* TouchIDUITests.m */,
+				7270AB661C9FE1BB00F04FD3 /* Info.plist */,
+			);
+			path = TouchIDUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7270AB3B1C9FE1BB00F04FD3 /* TouchID */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7270AB691C9FE1BB00F04FD3 /* Build configuration list for PBXNativeTarget "TouchID" */;
+			buildPhases = (
+				7270AB381C9FE1BB00F04FD3 /* Sources */,
+				7270AB391C9FE1BB00F04FD3 /* Frameworks */,
+				7270AB3A1C9FE1BB00F04FD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchID;
+			productName = TouchID;
+			productReference = 7270AB3C1C9FE1BB00F04FD3 /* TouchID.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7270AB541C9FE1BB00F04FD3 /* TouchIDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7270AB6C1C9FE1BB00F04FD3 /* Build configuration list for PBXNativeTarget "TouchIDTests" */;
+			buildPhases = (
+				7270AB511C9FE1BB00F04FD3 /* Sources */,
+				7270AB521C9FE1BB00F04FD3 /* Frameworks */,
+				7270AB531C9FE1BB00F04FD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7270AB571C9FE1BB00F04FD3 /* PBXTargetDependency */,
+			);
+			name = TouchIDTests;
+			productName = TouchIDTests;
+			productReference = 7270AB551C9FE1BB00F04FD3 /* TouchIDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7270AB5F1C9FE1BB00F04FD3 /* TouchIDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7270AB6F1C9FE1BB00F04FD3 /* Build configuration list for PBXNativeTarget "TouchIDUITests" */;
+			buildPhases = (
+				7270AB5C1C9FE1BB00F04FD3 /* Sources */,
+				7270AB5D1C9FE1BB00F04FD3 /* Frameworks */,
+				7270AB5E1C9FE1BB00F04FD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7270AB621C9FE1BB00F04FD3 /* PBXTargetDependency */,
+			);
+			name = TouchIDUITests;
+			productName = TouchIDUITests;
+			productReference = 7270AB601C9FE1BB00F04FD3 /* TouchIDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7270AB341C9FE1BB00F04FD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Marvs Temp User";
+				TargetAttributes = {
+					7270AB3B1C9FE1BB00F04FD3 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					7270AB541C9FE1BB00F04FD3 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 7270AB3B1C9FE1BB00F04FD3;
+					};
+					7270AB5F1C9FE1BB00F04FD3 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 7270AB3B1C9FE1BB00F04FD3;
+					};
+				};
+			};
+			buildConfigurationList = 7270AB371C9FE1BB00F04FD3 /* Build configuration list for PBXProject "TouchID" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7270AB331C9FE1BB00F04FD3;
+			productRefGroup = 7270AB3D1C9FE1BB00F04FD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7270AB3B1C9FE1BB00F04FD3 /* TouchID */,
+				7270AB541C9FE1BB00F04FD3 /* TouchIDTests */,
+				7270AB5F1C9FE1BB00F04FD3 /* TouchIDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7270AB3A1C9FE1BB00F04FD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7270AB4F1C9FE1BB00F04FD3 /* LaunchScreen.storyboard in Resources */,
+				7270AB4C1C9FE1BB00F04FD3 /* Assets.xcassets in Resources */,
+				7270AB4A1C9FE1BB00F04FD3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7270AB531C9FE1BB00F04FD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7270AB5E1C9FE1BB00F04FD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7270AB381C9FE1BB00F04FD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7270AB471C9FE1BB00F04FD3 /* ViewController.m in Sources */,
+				7270AB441C9FE1BB00F04FD3 /* AppDelegate.m in Sources */,
+				7270AB411C9FE1BB00F04FD3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7270AB511C9FE1BB00F04FD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7270AB5A1C9FE1BB00F04FD3 /* TouchIDTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7270AB5C1C9FE1BB00F04FD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7270AB651C9FE1BB00F04FD3 /* TouchIDUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7270AB571C9FE1BB00F04FD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7270AB3B1C9FE1BB00F04FD3 /* TouchID */;
+			targetProxy = 7270AB561C9FE1BB00F04FD3 /* PBXContainerItemProxy */;
+		};
+		7270AB621C9FE1BB00F04FD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7270AB3B1C9FE1BB00F04FD3 /* TouchID */;
+			targetProxy = 7270AB611C9FE1BB00F04FD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7270AB481C9FE1BB00F04FD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7270AB491C9FE1BB00F04FD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7270AB4D1C9FE1BB00F04FD3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7270AB4E1C9FE1BB00F04FD3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7270AB671C9FE1BB00F04FD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7270AB681C9FE1BB00F04FD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7270AB6A1C9FE1BB00F04FD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TouchID/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvinlabrador.TouchID;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7270AB6B1C9FE1BB00F04FD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TouchID/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvinlabrador.TouchID;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7270AB6D1C9FE1BB00F04FD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TouchIDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvinlabrador.TouchIDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchID.app/TouchID";
+			};
+			name = Debug;
+		};
+		7270AB6E1C9FE1BB00F04FD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TouchIDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvinlabrador.TouchIDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchID.app/TouchID";
+			};
+			name = Release;
+		};
+		7270AB701C9FE1BB00F04FD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TouchIDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvinlabrador.TouchIDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TouchID;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7270AB711C9FE1BB00F04FD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TouchIDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvinlabrador.TouchIDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TouchID;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7270AB371C9FE1BB00F04FD3 /* Build configuration list for PBXProject "TouchID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7270AB671C9FE1BB00F04FD3 /* Debug */,
+				7270AB681C9FE1BB00F04FD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7270AB691C9FE1BB00F04FD3 /* Build configuration list for PBXNativeTarget "TouchID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7270AB6A1C9FE1BB00F04FD3 /* Debug */,
+				7270AB6B1C9FE1BB00F04FD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7270AB6C1C9FE1BB00F04FD3 /* Build configuration list for PBXNativeTarget "TouchIDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7270AB6D1C9FE1BB00F04FD3 /* Debug */,
+				7270AB6E1C9FE1BB00F04FD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7270AB6F1C9FE1BB00F04FD3 /* Build configuration list for PBXNativeTarget "TouchIDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7270AB701C9FE1BB00F04FD3 /* Debug */,
+				7270AB711C9FE1BB00F04FD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7270AB341C9FE1BB00F04FD3 /* Project object */;
+}
