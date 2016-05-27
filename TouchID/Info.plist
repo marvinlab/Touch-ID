@@ -2,8 +2,26 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string></string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Subtitle</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Title</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string></string>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict>
+				<key>version</key>
+				<string>3</string>
+			</dict>
+		</dict>
+	</array>
 	<key>CFBundleDisplayName</key>
-	<string>Authentitouch</string>
+	<string>Marvin&apos;s App</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
