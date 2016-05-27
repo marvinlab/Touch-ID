@@ -15,6 +15,8 @@
 		7270AB4F1C9FE1BB00F04FD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7270AB4D1C9FE1BB00F04FD3 /* LaunchScreen.storyboard */; };
 		7270AB5A1C9FE1BB00F04FD3 /* TouchIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7270AB591C9FE1BB00F04FD3 /* TouchIDTests.m */; };
 		7270AB651C9FE1BB00F04FD3 /* TouchIDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7270AB641C9FE1BB00F04FD3 /* TouchIDUITests.m */; };
+		72AE40C61CD74AD300634D00 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AE40C51CD74AD300634D00 /* KeychainItemWrapper.m */; };
+		72B5AE5D1CA118D600AA1C32 /* fingerprint.png in Resources */ = {isa = PBXBuildFile; fileRef = 72B5AE5C1CA118D600AA1C32 /* fingerprint.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		7270AB601C9FE1BB00F04FD3 /* TouchIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7270AB641C9FE1BB00F04FD3 /* TouchIDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchIDUITests.m; sourceTree = "<group>"; };
 		7270AB661C9FE1BB00F04FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72AE40C41CD74AD300634D00 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		72AE40C51CD74AD300634D00 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		72B5AE5C1CA118D600AA1C32 /* fingerprint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fingerprint.png; path = ../../../Downloads/fingerprint.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,7 @@
 				7270AB581C9FE1BB00F04FD3 /* TouchIDTests */,
 				7270AB631C9FE1BB00F04FD3 /* TouchIDUITests */,
 				7270AB3D1C9FE1BB00F04FD3 /* Products */,
+				72B5AE5E1CA118E300AA1C32 /* Asset */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +109,8 @@
 			children = (
 				7270AB421C9FE1BB00F04FD3 /* AppDelegate.h */,
 				7270AB431C9FE1BB00F04FD3 /* AppDelegate.m */,
+				72AE40C41CD74AD300634D00 /* KeychainItemWrapper.h */,
+				72AE40C51CD74AD300634D00 /* KeychainItemWrapper.m */,
 				7270AB451C9FE1BB00F04FD3 /* ViewController.h */,
 				7270AB461C9FE1BB00F04FD3 /* ViewController.m */,
 				7270AB481C9FE1BB00F04FD3 /* Main.storyboard */,
@@ -138,6 +146,14 @@
 				7270AB661C9FE1BB00F04FD3 /* Info.plist */,
 			);
 			path = TouchIDUITests;
+			sourceTree = "<group>";
+		};
+		72B5AE5E1CA118E300AA1C32 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				72B5AE5C1CA118D600AA1C32 /* fingerprint.png */,
+			);
+			name = Asset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +223,7 @@
 				TargetAttributes = {
 					7270AB3B1C9FE1BB00F04FD3 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = HYQ5BA7M66;
 					};
 					7270AB541C9FE1BB00F04FD3 = {
 						CreatedOnToolsVersion = 7.1;
@@ -245,6 +262,7 @@
 			files = (
 				7270AB4F1C9FE1BB00F04FD3 /* LaunchScreen.storyboard in Resources */,
 				7270AB4C1C9FE1BB00F04FD3 /* Assets.xcassets in Resources */,
+				72B5AE5D1CA118D600AA1C32 /* fingerprint.png in Resources */,
 				7270AB4A1C9FE1BB00F04FD3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72AE40C61CD74AD300634D00 /* KeychainItemWrapper.m in Sources */,
 				7270AB471C9FE1BB00F04FD3 /* ViewController.m in Sources */,
 				7270AB441C9FE1BB00F04FD3 /* AppDelegate.m in Sources */,
 				7270AB411C9FE1BB00F04FD3 /* main.m in Sources */,
@@ -411,7 +430,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TouchID/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marvinlabrador.TouchID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,7 +443,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TouchID/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marvinlabrador.TouchID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +519,7 @@
 				7270AB6B1C9FE1BB00F04FD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7270AB6C1C9FE1BB00F04FD3 /* Build configuration list for PBXNativeTarget "TouchIDTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +528,7 @@
 				7270AB6E1C9FE1BB00F04FD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7270AB6F1C9FE1BB00F04FD3 /* Build configuration list for PBXNativeTarget "TouchIDUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +537,7 @@
 				7270AB711C9FE1BB00F04FD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
