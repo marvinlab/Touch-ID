@@ -20,8 +20,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B2b-ac-r6Y" userLabel="flashView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b9-Lh-Dyo">
-                                        <rect key="frame" x="8" y="209" width="304" height="101"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b9-Lh-Dyo">
+                                        <rect key="frame" x="137" y="273" width="47" height="23"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -33,15 +33,19 @@
                                     <constraint firstItem="6b9-Lh-Dyo" firstAttribute="centerX" secondItem="B2b-ac-r6Y" secondAttribute="centerX" id="hPP-pK-vyU"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI4-QF-gdB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI4-QF-gdB">
                                 <rect key="frame" x="135" y="110" width="51" height="30"/>
                                 <state key="normal" title="Time In"/>
                                 <connections>
                                     <action selector="authenticateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BO9-3F-zDb"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fingerprint.png" translatesAutoresizingMaskIntoConstraints="NO" id="brr-Bw-rLT">
-                                <rect key="frame" x="74" y="100" width="67" height="88"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fingerprint.png" translatesAutoresizingMaskIntoConstraints="NO" id="brr-Bw-rLT">
+                                <rect key="frame" x="50" y="82" width="77" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="7Z9-Te-7J4"/>
+                                    <constraint firstAttribute="height" constant="106" id="INl-2r-OTO"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -50,7 +54,10 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B2b-ac-r6Y" secondAttribute="bottom" id="GA3-Uk-4QN"/>
                             <constraint firstAttribute="trailing" secondItem="B2b-ac-r6Y" secondAttribute="trailing" id="JWL-xG-Nd2"/>
                             <constraint firstItem="B2b-ac-r6Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NLJ-Wo-M7u"/>
+                            <constraint firstItem="eI4-QF-gdB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="Nhr-9a-Zlf"/>
                             <constraint firstItem="eI4-QF-gdB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Swg-s0-4hi"/>
+                            <constraint firstItem="brr-Bw-rLT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="62" id="ZZp-Hq-7zP"/>
+                            <constraint firstItem="eI4-QF-gdB" firstAttribute="leading" secondItem="brr-Bw-rLT" secondAttribute="trailing" constant="8" id="mwP-PC-c7F"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
