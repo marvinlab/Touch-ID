@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -17,23 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sample Touch ID Authentication App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJI-Fx-ygZ">
-                                <rect key="frame" x="20" y="258" width="280" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Touch ID Authentication App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJI-Fx-ygZ">
+                                <rect key="frame" x="20" y="265" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Marvin M. Labrador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaO-Xa-gda">
-                                <rect key="frame" x="107" y="287" width="107" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marvin M. Labrador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaO-Xa-gda">
+                                <rect key="frame" x="109" y="296" width="102" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fingerprint.png" translatesAutoresizingMaskIntoConstraints="NO" id="dgb-Fm-gfI">
-                                <rect key="frame" x="100" y="72" width="121" height="178"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fingerprint.png" translatesAutoresizingMaskIntoConstraints="NO" id="dgb-Fm-gfI">
+                                <rect key="frame" x="128" y="154" width="65" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="Kmg-d3-Tys"/>
+                                    <constraint firstAttribute="width" constant="65" id="X81-Wx-VNM"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dgb-Fm-gfI" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="134" id="0At-aD-HPH"/>
+                            <constraint firstItem="xJI-Fx-ygZ" firstAttribute="top" secondItem="dgb-Fm-gfI" secondAttribute="bottom" constant="16" id="0n3-Jx-b5n"/>
+                            <constraint firstItem="dgb-Fm-gfI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="K3L-pY-ykj"/>
+                            <constraint firstItem="kaO-Xa-gda" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Lf8-b2-OqM"/>
+                            <constraint firstItem="xJI-Fx-ygZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="WUl-ZG-afw"/>
+                            <constraint firstItem="kaO-Xa-gda" firstAttribute="top" secondItem="xJI-Fx-ygZ" secondAttribute="bottom" constant="10" id="isI-4p-sTP"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
