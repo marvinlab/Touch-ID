@@ -33,7 +33,7 @@
                                     <constraint firstItem="6b9-Lh-Dyo" firstAttribute="centerX" secondItem="B2b-ac-r6Y" secondAttribute="centerX" id="hPP-pK-vyU"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI4-QF-gdB">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI4-QF-gdB">
                                 <rect key="frame" x="135" y="110" width="51" height="30"/>
                                 <state key="normal" title="Time In"/>
                                 <connections>
@@ -50,6 +50,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B2b-ac-r6Y" secondAttribute="bottom" id="GA3-Uk-4QN"/>
                             <constraint firstAttribute="trailing" secondItem="B2b-ac-r6Y" secondAttribute="trailing" id="JWL-xG-Nd2"/>
                             <constraint firstItem="B2b-ac-r6Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NLJ-Wo-M7u"/>
+                            <constraint firstItem="eI4-QF-gdB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Swg-s0-4hi"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
