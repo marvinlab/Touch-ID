@@ -6,11 +6,26 @@
 	<array>
 		<dict>
 			<key>UIApplicationShortcutItemIconFile</key>
-			<string></string>
+			<string>ex</string>
 			<key>UIApplicationShortcutItemSubtitle</key>
-			<string>Subtitle</string>
+			<string>tap to time out</string>
 			<key>UIApplicationShortcutItemTitle</key>
-			<string>Title</string>
+			<string>Log Out</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string></string>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict>
+				<key>version</key>
+				<string>3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>in</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>tap to time in</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Log In</string>
 			<key>UIApplicationShortcutItemType</key>
 			<string></string>
 			<key>UIApplicationShortcutItemUserInfo</key>
