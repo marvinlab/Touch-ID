@@ -10,6 +10,12 @@
 #import "KeychainItemWrapper.h"
 #import <LocalAuthentication/LocalAuthentication.h>
 
+typedef NS_ENUM(NSInteger, TIActionTypes)
+{
+    TIActionTypesLogIn,
+    TIActionTypesLogOut,
+};
+
 
 static NSString* const defaultSSIDDATA = @"<43797350 726f6a65 637435>";
 static NSString* const defaultSSID = @"CysProject5";
@@ -22,6 +28,8 @@ static NSString* const shortcutStringTypeLogOut = @"TILogOut";
 
 @property (nonatomic, retain) IBOutlet UIView *flashView;
 @property (nonatomic, retain) IBOutlet UILabel *clockView;
+@property (nonatomic, retain) NSString *actionString;
+@property (nonatomic, assign) TIActionTypes shortcutActionType;
 
 @end
 
@@ -67,6 +75,13 @@ static NSString* const shortcutStringTypeLogOut = @"TILogOut";
 
 - (void)authenticateButtonTapped:(id)sender
 {
+    self.actionString = @"LOG OUT";
+    
+    UIButton *buttonSender = (UIButton *)sender;
+    if (buttonSender.tag == TIActionTypesLogIn && self.shortcutActionType != TIActionTypesLogOut) {
+        self.actionString = @"LOG IN";
+    }
+    
     LAContext *context = [[LAContext alloc] init];
     context.localizedFallbackTitle = @"";
     NSError *error;
@@ -84,8 +99,9 @@ static NSString* const shortcutStringTypeLogOut = @"TILogOut";
         [self showNotConnectedToOfficeNetworkWithCompletionBlock:nil];
         return;
     } else {
+        NSString *authenticationMessage = [NSString stringWithFormat:@"Scan finger to authenticate %@", self.actionString];
         [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
-                localizedReason:@"Scan your fingerprint on the home button to authenticate."
+                localizedReason:authenticationMessage
                           reply:^(BOOL success, NSError * _Nullable error) {
                               if (error) {
                                   if (error.code == LAErrorUserFallback) {
@@ -250,14 +266,14 @@ static NSString* const shortcutStringTypeLogOut = @"TILogOut";
 
 - (void)shortcutLaunchedForLogIn
 {
+    self.shortcutActionType = TIActionTypesLogIn;
     [self authenticateButtonTapped:nil];
-    NSLog(@"Log In Functionality Triggered");
 }
 
 - (void)shortcutLaunchedForLogOut
 {
+    self.shortcutActionType = TIActionTypesLogOut;
     [self authenticateButtonTapped:nil];
-    NSLog(@"Log Out Functionality Triggered");
 }
 
 
