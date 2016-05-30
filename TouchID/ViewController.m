@@ -11,8 +11,10 @@
 #import <LocalAuthentication/LocalAuthentication.h>
 
 
-static const NSString *defaultSSIDDATA = @"<43797350 726f6a65 637435>";
-static const NSString *defaultSSID = @"CysProject5";
+static NSString* const defaultSSIDDATA = @"<43797350 726f6a65 637435>";
+static NSString* const defaultSSID = @"CysProject5";
+static NSString* const shortcutStringTypeLogIn = @"TILogIn";
+static NSString* const shortcutStringTypeLogOut = @"TILogOut";
 
 @import SystemConfiguration.CaptiveNetwork;
 
@@ -27,11 +29,24 @@ static const NSString *defaultSSID = @"CysProject5";
 
 #pragma mark - authentication methods
 
+- (void)dealloc 
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self startClock];
     [self flashColorAlertIsSuccess:YES];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(shortcutLaunchedForLogIn)
+                                                 name:shortcutStringTypeLogIn
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(shortcutLaunchedForLogOut)
+                                                 name:shortcutStringTypeLogOut
+                                               object:nil];
 }
 
 - (void)startClock
@@ -228,6 +243,21 @@ static const NSString *defaultSSID = @"CysProject5";
                      completion:^(BOOL finished){
                          
                      }];
+}
+
+
+#pragma - mark Quick Actions Launch Methods
+
+- (void)shortcutLaunchedForLogIn
+{
+    [self authenticateButtonTapped:nil];
+    NSLog(@"Log In Functionality Triggered");
+}
+
+- (void)shortcutLaunchedForLogOut
+{
+    [self authenticateButtonTapped:nil];
+    NSLog(@"Log Out Functionality Triggered");
 }
 
 
