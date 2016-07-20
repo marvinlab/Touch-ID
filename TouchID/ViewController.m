@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "KeychainItemWrapper.h"
 #import <LocalAuthentication/LocalAuthentication.h>
+#import "PeekingViewController.h"
 
 typedef NS_ENUM(NSInteger, TIActionTypes)
 {
@@ -24,7 +25,7 @@ static NSString* const shortcutStringTypeLogOut = @"TILogOut";
 
 @import SystemConfiguration.CaptiveNetwork;
 
-@interface ViewController ()
+@interface ViewController () <UIViewControllerPreviewingDelegate>
 
 @property (nonatomic, retain) IBOutlet UIView *flashView;
 @property (nonatomic, retain) IBOutlet UILabel *clockView;
@@ -55,6 +56,11 @@ static NSString* const shortcutStringTypeLogOut = @"TILogOut";
                                              selector:@selector(shortcutLaunchedForLogOut)
                                                  name:shortcutStringTypeLogOut
                                                object:nil];
+    
+    if ([self isForceTouchCapable]) {
+        [self registerForPreviewingWithDelegate:self
+                                     sourceView:self.view];
+    }
 }
 
 - (void)startClock
@@ -276,5 +282,35 @@ static NSString* const shortcutStringTypeLogOut = @"TILogOut";
     [self authenticateButtonTapped:nil];
 }
 
+
+#pragma - mark Peek Pop methods
+
+- (BOOL)isForceTouchCapable
+{
+    BOOL isForceTouchCapable = NO;
+    if ([self.traitCollection respondsToSelector:@selector(forceTouchCapability)]) {
+        isForceTouchCapable = self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable;
+    }
+    return isForceTouchCapable;
+}
+
+- (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location
+{
+    PeekingViewController *peekView = [[PeekingViewController alloc] init];
+    return peekView;
+}
+
+- (void)previewingContext:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit
+{
+    
+}
+
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    for (UITouch *touch in touches) {
+        NSLog(@"The force is %f in this one", touch.force);
+    }
+    
+}
 
 @end

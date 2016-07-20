@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		726714841D055BA40063EDA2 /* PeekingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726714821D055BA40063EDA2 /* PeekingViewController.m */; };
+		726714851D055BA40063EDA2 /* PeekingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 726714831D055BA40063EDA2 /* PeekingViewController.xib */; };
 		7270AB411C9FE1BB00F04FD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7270AB401C9FE1BB00F04FD3 /* main.m */; };
 		7270AB441C9FE1BB00F04FD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7270AB431C9FE1BB00F04FD3 /* AppDelegate.m */; };
 		7270AB471C9FE1BB00F04FD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7270AB461C9FE1BB00F04FD3 /* ViewController.m */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		726714811D055BA40063EDA2 /* PeekingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeekingViewController.h; sourceTree = "<group>"; };
+		726714821D055BA40063EDA2 /* PeekingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeekingViewController.m; sourceTree = "<group>"; };
+		726714831D055BA40063EDA2 /* PeekingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeekingViewController.xib; sourceTree = "<group>"; };
 		7270AB3C1C9FE1BB00F04FD3 /* TouchID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7270AB401C9FE1BB00F04FD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7270AB421C9FE1BB00F04FD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +123,9 @@
 				7270AB4D1C9FE1BB00F04FD3 /* LaunchScreen.storyboard */,
 				7270AB501C9FE1BB00F04FD3 /* Info.plist */,
 				7270AB3F1C9FE1BB00F04FD3 /* Supporting Files */,
+				726714811D055BA40063EDA2 /* PeekingViewController.h */,
+				726714821D055BA40063EDA2 /* PeekingViewController.m */,
+				726714831D055BA40063EDA2 /* PeekingViewController.xib */,
 			);
 			path = TouchID;
 			sourceTree = "<group>";
@@ -263,6 +271,7 @@
 				7270AB4F1C9FE1BB00F04FD3 /* LaunchScreen.storyboard in Resources */,
 				7270AB4C1C9FE1BB00F04FD3 /* Assets.xcassets in Resources */,
 				72B5AE5D1CA118D600AA1C32 /* fingerprint.png in Resources */,
+				726714851D055BA40063EDA2 /* PeekingViewController.xib in Resources */,
 				7270AB4A1C9FE1BB00F04FD3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +301,7 @@
 				7270AB471C9FE1BB00F04FD3 /* ViewController.m in Sources */,
 				7270AB441C9FE1BB00F04FD3 /* AppDelegate.m in Sources */,
 				7270AB411C9FE1BB00F04FD3 /* main.m in Sources */,
+				726714841D055BA40063EDA2 /* PeekingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
